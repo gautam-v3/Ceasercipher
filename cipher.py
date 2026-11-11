@@ -21,14 +21,23 @@ def decrypt(msg, shift):
         else:
             decrypted_msg += letter
     print(f"Here is the decoded result: {decrypted_msg}")
+youwant_continue=True
+while(youwant_continue):
+    choose = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    msg = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
 
-choose = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-msg = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
+    if choose == "encode":
+      encrypt(msg, shift)
+    elif choose == "decode":
+       decrypt(msg, shift)
+    else:
+       print("Invalid choice.")
 
-if choose == "encode":
-    encrypt(msg, shift)
-elif choose == "decode":
-    decrypt(msg, shift)
-else:
-    print("Invalid choice.")
+    conti=input("type yes to continue or else type no").lower()
+    if(conti=="yes"):
+        youwant_continue=True
+    else:
+        youwant_continue=False
+
+
