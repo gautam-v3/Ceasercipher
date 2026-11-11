@@ -49,6 +49,6 @@ Here is the decoded result: hello world!
 ## 🧠 How It Works
 Each alphabetic character in the input string is located in `string.ascii_lowercase` and shifted by `n` positions using:
 
-$$\text{new\_index} = (\text{current\_index} \pm \text{shift}) \bmod 26$$
+$$\text{new index} = (\text{current index} \pm \text{shift}) \bmod 26$$
 
 Non-alphabetic characters (spaces, symbols, digits) bypass the shift and are appended directly to the output.
