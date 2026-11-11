@@ -1,6 +1,6 @@
 # Caesar Cipher CLI 🔐
 
-A Python command-line tool that encrypts and decrypts messages using the classic **Caesar Cipher** substitution technique. Built as part of Day 8 of *100 Days of Code: The Complete Python Pro Bootcamp*.
+A Python command-line tool that encrypts and decrypts messages using the classic **Caesar Cipher** substitution technique. 
 
 ## ✨ Features
 - **Encode & Decode:** Shift letters forward to encrypt or backward to decrypt.
